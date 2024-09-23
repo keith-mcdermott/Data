@@ -16,7 +16,7 @@ function init() {
     const map = L.map(mapElement, {
         center:[39.7,7],
         zoom:5,
-        layers: [Stadia_StamenTerrainBackground]
+        layers: [Esri_WorldStreetMap]
     })
 
     // Layers
