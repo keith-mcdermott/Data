@@ -33,10 +33,10 @@ function init() {
 
     // Layers
     const baseMaps = {
-        "<b>Terrain</b>": Stadia_StamenTerrainBackground,
+
         "Streets": Esri_WorldStreetMap,
         "National Geo": Esri_NatGeoWorldMap,
-        "Satellite": Stadia_AlidadeSatellite
+
     };
 
 
@@ -103,6 +103,7 @@ function init() {
                     layer.bindPopup('<b>'+feature.properties.Title+'</b>'+ '<br>'+'Roman Strength: '+feature.properties.Roman_Strength.toLocaleString()+ '<br>'+'Carthaginian Strength: '+feature.properties.Carthaginian_Strength.toLocaleString()+ '<br>'+'Date: '+feature.properties.Date+ '<br>'+'<b>Result: '+feature.properties.Result+'</b>');
                     layer.on('mouseover',function(e){
                         layer.setStyle(hoverStyle)  
+                        consolelog('HOVER')
                     });
                     layer.on('mouseout',function(e){
                         layer.setStyle(stylePoints(feature))
@@ -185,10 +186,10 @@ function init() {
     .addTo(map);
 
 
-    map.on('click', function(e){
-        var coord = e.latlng;
-        console.log(coord.lat, coord.lng);
-    });
+    // map.on('click', function(e){
+    //     var coord = e.latlng;
+    //     console.log(coord.lat, coord.lng);
+    // });
 
 
    
