@@ -1,7 +1,7 @@
 window.onload = init;
-
+location.reload();
 function init() {
-    location.reload();
+    
     const mapElement = document.getElementById('map')
 
     // Basemaps
