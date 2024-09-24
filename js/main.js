@@ -1,5 +1,5 @@
 window.onload = init;
-location.reload();
+
 function init() {
     
     const mapElement = document.getElementById('map')
