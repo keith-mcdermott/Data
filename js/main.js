@@ -91,7 +91,7 @@ function init() {
                     layer.bindPopup('<b>'+feature.properties.Title+'</b>'+ '<br>'+'Roman Strength: '+feature.properties.Roman_Strength.toLocaleString()+ '<br>'+'Carthaginian Strength: '+feature.properties.Carthaginian_Strength.toLocaleString()+ '<br>'+'Date: '+feature.properties.Date+ '<br>'+'<b>Result: '+feature.properties.Result+'</b>');
                     layer.on('mouseover',function(e){
                         layer.setStyle(hoverStyle)  
-                        consolelog('HOVER')
+
                     });
                     layer.on('mouseout',function(e){
                         layer.setStyle(stylePoints(feature))
